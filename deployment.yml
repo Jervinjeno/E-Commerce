@@ -17,5 +17,5 @@ spec:
       containers:
       - name: react-ecommerce
         image: ecommerce:latest # Added a specific tag for better version control
-        ports:s
+        ports:
         - containerPort: 80

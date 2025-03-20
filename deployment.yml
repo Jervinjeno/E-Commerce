@@ -15,23 +15,7 @@ spec:
         app: react-ecommerce
     spec:
       containers:
-        - name: react-ecommerce
-          image: techtalkjervin/ecommerce
-          ports:
-            - containerPort: 80
-
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: react-ecommerce-service
-spec:
-  selector:
-    app: react-ecommerce
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30007
-  type: NodePort
-            
+      - name: react-ecommerce
+        image: techtalkjervin/ecommerce:latest # Added a specific tag for better version control
+        ports:
+        - containerPort: 80

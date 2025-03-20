@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: react-ecommerce
-          image: kannandolmites/ecommerce:2
+          image: techtalkjervin/ecommerce
           ports:
             - containerPort: 80
 
